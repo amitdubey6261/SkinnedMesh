@@ -69,7 +69,7 @@ export default class Skeleton {
             if (this.tfjs.Pose.length > 0) {
                 console.log(this.tfjs.Pose);
                 this.tfjs.Pose[0].keypoints3D.map((val, idx) => {
-                    if (val.score > 0.7) {
+                    if (val.score > 0.5) {
                         this.SkeletonGeometry[idx].position.set(val.x, -val.y, val.z);
                         this.line.geometry.setFromPoints([this.point1, this.point2]);
                         this.line.needsUpdate = true;
