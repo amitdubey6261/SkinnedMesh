@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.experience{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.experience-canvas{
+    width: 100%;
+    height: 100%;
+}

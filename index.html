@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .experience{
+      position: relative;
+    }
+
+    .btn{
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      z-index: 2;
+      border: 2px solid white;
+      color: white;
+      background-color: darkblue;
+      width: 4cm;
+      height: 1cm;
+      padding: 0.2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="experience">
+    <canvas class="experience-canvas"></canvas>
+    <button class="btn">START CAM</button>
+    <video id="video" playsinline style="
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    visibility: hidden;
+    width: auto;
+    height: auto ;
+    border : 2px solid yellow;
+    ">
+    </video>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
